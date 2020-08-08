@@ -4,7 +4,8 @@
   "description": "A collection of recipes popular at my house",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx eleventy --serve",
+    "build": "eleventy"
   },
   "author": "Agata Zurek",
   "license": "MIT",

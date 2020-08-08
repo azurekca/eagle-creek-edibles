@@ -1,0 +1,7 @@
+<div class="auto-grid">
+  {% for recipe in collections.recipes -%}
+    <article class="face">
+      <a href="{{recipe.url}}">{{ recipe.data.title }}</a>
+    </article>
+  {%- endfor %}
+</div>

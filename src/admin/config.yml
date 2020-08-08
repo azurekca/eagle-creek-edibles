@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+local_backend: true # to run local back end: npx netlify-cms-proxy-server
+site_url: https://eagle-creek-edibles.netlify.app/
+media_folder: "static/images" # Media files will be stored in the public folder
+collections:
+  - label: "Recipes" # Used in the UI - as in, this is the label the cms editor will see
+    name: "recipes" # Used in routes, e.g., /admin/collections/blog
+    folder: "src/recipes" # The path to the folder where the documents are stored
+    extension: md # determines the file extension searched for when finding existing entries in a folder collection and it determines the file extension used to save new collection items
+    create: true # Allow users to create new documents in this collection
+    delete: true # Allows user to delete items in collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"} # Widgets define the data type and interface for entry fields
+      - {label: "Rating", name: "rating", widget: "number", default: 5, valueType: "int",  min: 1, max: 5} # https://www.netlifycms.org/docs/widgets/
+      - {label: "Prep Time", name: "prepTime", widget: "string"}
+      - {label: "Cook Time", name: "cookTime", widget: "string"}
+      - {label: "Ingredients", name: "ingredients", widget: "list"}
+      - {label: "Photo", name: "image", widget: "image"}
+      - {label: "Instructions", name: "instructions", widget: "markdown"}

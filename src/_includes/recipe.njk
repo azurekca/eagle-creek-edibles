@@ -1,0 +1,28 @@
+{% extends 'base.njk' %}
+
+{% block stuff -%}
+<div class="wrapper">
+  <h1>{{ title }}</h1>
+  <hr>
+  <p>{% for i in range(0, rating) %}⭐{% endfor %}</p>
+  <p>⏱️ Prep time: {{ prepTime }}</p>
+  <p>🥘 Cooking time: {{ cookTime }}</p>
+  <h2>Ingredients</h2>
+  <ul>
+    {% for ingredient in ingredients -%}
+      <li>{{ingredient}}</li>
+    {% endfor%}
+  </ul>
+  <ul>
+    {% for ingredient in ingredients -%}
+    <li style="list-style: none">
+      <input type="checkbox" id="ingredient{{loop.index}}">
+      <label for="ingredient{{loop.index}}">{{ingredient}}</label>
+    </li>
+    {% endfor%}
+  </ul>
+  <hr>
+  <h2>Instructions</h2>
+  {{ content | safe }}
+</div>
+{%- endblock %}
