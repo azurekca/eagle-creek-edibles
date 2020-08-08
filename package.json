@@ -1,0 +1,14 @@
+{
+  "name": "eagle-creek-edibles",
+  "version": "1.0.0",
+  "description": "A collection of recipes popular at my house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agata Zurek",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
