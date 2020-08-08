@@ -61,7 +61,7 @@ article > * + * {
   margin-top: 1em;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* Inherit fonts *and colours* for inputs and buttons **Agata added colour */
 a,
 input,
 button,
@@ -71,6 +71,12 @@ select {
   color: inherit;
 }
 
+/* Agata additional reset */ 
+ol, ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {

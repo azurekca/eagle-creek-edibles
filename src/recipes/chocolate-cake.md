@@ -5,7 +5,7 @@ prepTime: 20 min
 cookTime: 22 min
 ingredients: ["1 1/4 cup almond flour", "1/2 cup cocoa powder", "1/2 tsp baking soda", "1/2 tsp sea salt", "4 eggs", "1/3 cup maple syrup", "1 tbsp vanilla extract"]
 image: /static/images/lemon_tart.jpg
-instructions: |-
+---
 Pre-heat the oven to 325 F degrees. 
 
 Line an 9-inch spring form pan with parchment paper and grease it generously with coconut oil. Set aside.
@@ -19,4 +19,3 @@ Pour the batter into the greased pan. Bake for 23 minutes or until a toothpick i
 Let it cool on the kitchen counter for 10 minutes. Gently run a knife over the edges and transfer the cake onto a cake plate. Let it cool to room temperature.
 
 When ready to serve, spread the maple whipped cream over the top and decorate it with fruit and mint. Slice and serve.
----

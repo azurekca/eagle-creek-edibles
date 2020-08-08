@@ -7,10 +7,9 @@ ingredients:
   - zest of 1 lemon
   - a bag of dicks
 image: /static/images/lemon_tart.jpg
-instructions: |-
+---
   Zest lemon with finesse.
 
   Beat Daniel with the bag of dicks.
 
   Enjoy tart all by myself.
----
