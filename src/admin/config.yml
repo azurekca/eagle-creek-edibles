@@ -18,4 +18,4 @@ collections:
       - {label: "Cook Time", name: "cookTime", widget: "string"}
       - {label: "Ingredients", name: "ingredients", widget: "list"}
       - {label: "Photo", name: "image", widget: "image"}
-      - {label: "Instructions", name: "instructions", widget: "markdown"}
+      - {label: "Instructions", name: "body", widget: "markdown"}

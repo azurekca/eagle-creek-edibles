@@ -1,18 +1,15 @@
 {% extends 'base.njk' %}
 
 {% block stuff -%}
-<div class="wrapper">
+<div class="text-wrapper flow">
   <h1>{{ title }}</h1>
   <hr>
-  <p>{% for i in range(0, rating) %}⭐{% endfor %}</p>
-  <p>⏱️ Prep time: {{ prepTime }}</p>
-  <p>🥘 Cooking time: {{ cookTime }}</p>
+  <div class="flex">
+    <p class="inline">{% for i in range(0, rating) %}⭐{% endfor %}</p>
+    <p class="inline">⏱️ Prep time: {{ prepTime }}</p>
+    <p class="inline">🥘 Cooking time: {{ cookTime }}</p>
+  </div>
   <h2>Ingredients</h2>
-  <ul>
-    {% for ingredient in ingredients -%}
-      <li>{{ingredient}}</li>
-    {% endfor%}
-  </ul>
   <ul>
     {% for ingredient in ingredients -%}
     <li style="list-style: none">
@@ -24,6 +21,5 @@
   <hr>
   <h2>Instructions</h2>
   {{ content | safe }}
-  {{ instructions }}
 </div>
 {%- endblock %}
