@@ -14,4 +14,10 @@ image: /static/images/lemon_tart.jpg
 
  Beat Daniel with the bag of dicks.
 
+<<<<<<< HEAD
  Enjoy tart all by myself.
+=======
+Punch Agata in the box
+
+  Enjoy tart all by myself.
+>>>>>>> 22815fde06b8b9a9a1c2ff04ae57ac4343121fca
