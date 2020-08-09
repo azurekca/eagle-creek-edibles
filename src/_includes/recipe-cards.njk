@@ -1,7 +1,15 @@
-<div class="auto-grid">
+<div class="auto-grid page-wrapper">
   {% for recipe in collections.recipes -%}
-    <article class="face">
-      <a href="{{recipe.url}}">{{ recipe.data.title }}</a>
-    </article>
+    <a href="{{recipe.url}}" class="index-card face">
+      <h2>{{ recipe.data.title }}</h2>
+      <p class="stars">{% for i in range(0, recipe.data.rating) %}★{% endfor %}</p>
+      <p class="">🔪 Prep time: {{ recipe.data.prepTime }}</p>
+      <p class="">⏱️ Cooking time: {{ recipe.data.cookTime }}</p>
+      <ul>
+      {% for ingredient in recipe.data.ingredients -%}
+        <li>{{ingredient}}</li>
+      {% endfor%}
+      </ul>
+    </a>
   {%- endfor %}
 </div>

@@ -3,7 +3,8 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 local_backend: true # to run local back end: npx netlify-cms-proxy-server
 site_url: https://eagle-creek-edibles.netlify.app/
-media_folder: "static/images" # Media files will be stored in the public folder
+media_folder: "src/static/images" # Media files will be stored in the public folder
+public_folder: "/static/images" # Where the files uploaded by the media library will be accessed, relative to the base of the built site.
 collections:
   - label: "Recipes" # Used in the UI - as in, this is the label the cms editor will see
     name: "recipes" # Used in routes, e.g., /admin/collections/blog
@@ -14,8 +15,13 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"} # Widgets define the data type and interface for entry fields
       - {label: "Rating", name: "rating", widget: "number", default: 5, valueType: "int",  min: 1, max: 5} # https://www.netlifycms.org/docs/widgets/
-      - {label: "Prep Time", name: "prepTime", widget: "string"}
-      - {label: "Cook Time", name: "cookTime", widget: "string"}
-      - {label: "Ingredients", name: "ingredients", widget: "list"}
-      - {label: "Photo", name: "image", widget: "image"}
+      - {label: "Prep Time", name: "prepTime", widget: "string", hint: "20 min | 1:30 hr:min"}
+      - {label: "Cook Time", name: "cookTime", widget: "string", hint: "20 min | 1:30 hr:min"}
+      - {label: "Ingredients", name: "ingredients", widget: "list", hint: "Comma separated list. tsp | tbsp | cup"}
+      - {label: "Meal Type",
+          name: "type",
+          widget: "select",
+          multiple: true,
+          options: ["Breakfast", "Lunch", "Dinner", "Dessert", "Snack", "Drink"]}
+      - {label: "Photo", name: "image", widget: "image", hint: "Picture ratio is 5 x 3"}
       - {label: "Instructions", name: "body", widget: "markdown"}

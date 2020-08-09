@@ -1,15 +1,17 @@
 ---
 title: Lemon Tart
-rating: 5
+rating: 3
 prepTime: 30 min
 cookTime: 0 min
 ingredients:
   - zest of 1 lemon
   - a bag of dicks
+type:
+  - Dessert
 image: /static/images/lemon_tart.jpg
 ---
-  Zest lemon with finesse.
+ Zest lemon with finesse.
 
-  Beat Daniel with the bag of dicks.
+ Beat Daniel with the bag of dicks.
 
-  Enjoy tart all by myself.
+ Enjoy tart all by myself.

@@ -3,8 +3,17 @@ title: Chocolate Cake
 rating: 5
 prepTime: 20 min
 cookTime: 22 min
-ingredients: ["1 1/4 cup almond flour", "1/2 cup cocoa powder", "1/2 tsp baking soda", "1/2 tsp sea salt", "4 eggs", "1/3 cup maple syrup", "1 tbsp vanilla extract"]
-image: /static/images/lemon_tart.jpg
+ingredients:
+  - 1 1/4 cup almond flour
+  - 1/2 cup cocoa powder
+  - 1/2 tsp baking soda
+  - 1/2 tsp sea salt
+  - 4 eggs
+  - 1/3 cup maple syrup
+  - 1 tbsp vanilla extract
+type:
+  - Dessert
+image: /static/images/chocolate_cake.jpg
 ---
 Pre-heat the oven to 325 F degrees. 
 

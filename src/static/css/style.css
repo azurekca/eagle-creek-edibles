@@ -25,7 +25,6 @@
 
 /* MAIN PAGE STYLES */
 body {
-	background-color: white;
 	color: var(--color-med-dark);
   text-align: left;
 	display: flex;
@@ -56,25 +55,22 @@ footer {
 	margin-left: auto;
   margin-right: auto;
 	max-width: var(--text-max-width);
-
 }
 .auto-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size, 16rem), 500px));
+	grid-template-rows: repeat(auto-fit, 300px);
 	grid-gap: var(--size-base, 1rem);
 }
-
 .flex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .inline {
 	display: inline-block;
 }
-
 .flow > * {
 	margin-block-start: var(--size-md);
 }
@@ -85,23 +81,42 @@ input[type=checkbox]:checked + label {
   text-decoration: line-through;
   color: var(--color-med);
 }
-hr {
-  max-width: 65ch;
-  margin-left: 0;
-}
 /* Recipes */
-.card {
+.index-card {
 	padding: var(--size-base, 1rem);
 	text-align: left;
-	background-color: var(--color-light);
+	text-decoration: none;
+	background-color: white;
 	color: var(--color-dark);
-	border-radius: var(--size-sm);
-	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	justify-content: center;
+	box-shadow: 0 0 15px 1px var(--color-med-light);
+	overflow: hidden;
+	display: block;
 }
 
+.index-card > *:after {
+	content: '';
+	display: block;
+	width: 100%;
+}
+.index-card > h2:after {
+	height: 2px;
+	margin-top: 0.25rem;
+	background: red;
+}
+.index-card > p:after {
+	height: 1px;
+	margin-top: 0.25rem;
+	background: blue;
+}
+.index-card .stars:after {
+	margin-top: -8px;
+}
+.index-card ul {
+	margin-left: var(--size-base);
+}
+.stars {
+	font-size: var(--size-h2);
+}
 /* TEXT */
 body {
 	font-family: 'Special Elite', 'Courier New', Courier, monospace;
@@ -121,18 +136,6 @@ h3 {
 }
 p, li, label {
 	font-size: var(--size-base);
-  max-width: 65ch;
-}
-p {
-  padding-top: var(--size-base)
-}
-nav a {
-	font-size: var(--size-h2);
-	padding: 0 var(--size-base, 1rem);
-	text-decoration: none;
-}
-.active {
-	text-decoration: underline;
 }
 
 
@@ -141,4 +144,5 @@ nav a {
 	:root{
 		--auto-grid-min-size: 500px;
 	}
+	
 }
