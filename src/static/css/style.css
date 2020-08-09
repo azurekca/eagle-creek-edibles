@@ -92,27 +92,31 @@ input[type=checkbox]:checked + label {
 	overflow: hidden;
 	display: block;
 }
-
-.index-card > *:after {
+.index-card > * {
+	margin-top: 4px;
+}
+.index-card > *::after,
+.index-card ul li::after {
 	content: '';
 	display: block;
 	width: 100%;
 }
-.index-card > h2:after {
+.index-card > h2::after {
 	height: 2px;
 	margin-top: 0.25rem;
 	background: red;
 }
-.index-card > p:after {
+.index-card > p::after,
+.index-card ul li::after {
 	height: 1px;
-	margin-top: 0.25rem;
+	margin-top: 1px;
 	background: blue;
 }
 .index-card .stars:after {
 	margin-top: -8px;
 }
 .index-card ul {
-	margin-left: var(--size-base);
+	padding-left: var(--size-base);
 }
 .stars {
 	font-size: var(--size-h2);
