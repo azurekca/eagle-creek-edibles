@@ -82,15 +82,20 @@ input[type=checkbox]:checked + label {
   color: var(--color-med);
 }
 /* Recipes */
+.index {
+	text-decoration: none;
+	position: relative;
+	box-shadow: 0 0 15px 1px var(--color-med-light);
+	z-index: 100;
+}
 .index-card {
+	overflow: hidden;
 	padding: var(--size-base, 1rem);
 	text-align: left;
-	text-decoration: none;
 	background-color: white;
 	color: var(--color-dark);
-	box-shadow: 0 0 15px 1px var(--color-med-light);
-	overflow: hidden;
-	display: block;
+	height: 300px;
+	
 }
 .index-card > * {
 	margin-top: 4px;
@@ -110,23 +115,42 @@ input[type=checkbox]:checked + label {
 .index-card ul li::after {
 	height: 1px;
 	margin-top: 1px;
-	background: blue;
+	background: lightblue;
 }
 .index-card .stars:after {
 	margin-top: -8px;
 }
-.index-card ul {
-	padding-left: var(--size-base);
+.index-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	height: auto;
 }
-.stars {
-	font-size: var(--size-h2);
+/* Card Animation */
+.index {
+	perspective: 65rem;
+	transform-style: preserve-3d;
+	transition: transform 1s ease-out;
 }
-/* TEXT */
+.index:hover {
+	transform: rotateY(-180deg);
+}
+.index-card, .index-image {
+	backface-visibility: hidden;
+}
+.index-image {
+  transform: rotateY(180deg)
+}
+/* Text */
 body {
 	font-family: 'Special Elite', 'Courier New', Courier, monospace;
 }
 #site-name {
-  font-size: var(--size-h3);
+	font-size: var(--size-h3);
+}
+.stars {
+	font-size: var(--size-h2);
 }
 h1 {
 	font-size: var(--size-h1);
