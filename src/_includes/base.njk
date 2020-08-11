@@ -15,5 +15,8 @@
     {% endblock %}
   </main>
   {% include 'footer.njk' %}
+  {% if pageScript %}
+    {% include pageScript %}
+  {% endif %}
 </body>
 </html>

@@ -22,6 +22,6 @@ collections:
           name: "type",
           widget: "select",
           multiple: true,
-          options: ["Breakfast", "Lunch", "Dinner", "Dessert", "Snack", "Drink"]}
+          options: ["Breakfast", "Dinner", "Dessert", "Dressing", "Snack", "Drink"]}
       - {label: "Photo", name: "image", widget: "image", hint: "Picture ratio is 5 x 3"}
       - {label: "Instructions", name: "body", widget: "markdown"}

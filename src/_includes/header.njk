@@ -1,4 +1,8 @@
 <header>
   <p id="site-name">Eagle Creek Edibles</p>
-  {% if page.url !== "/" %}<a href="/">All Recipes</a>{% endif %}
+  {% if page.url == "/" -%}
+  {% include 'search-form.njk' %}
+  {% else %}
+  <a href="/">All Recipes</a>
+  {%- endif %}
 </header>

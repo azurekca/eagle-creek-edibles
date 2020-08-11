@@ -1,8 +1,8 @@
 ---
-title: Chickpea and Almond Flour Pie and Tart Crust
+title: Slow Carb Pie and Tart Crust
 rating: 3
-prepTime: "30"
-cookTime: "25"
+prepTime: "30 min"
+cookTime: "25 min"
 ingredients:
   - 3/4 cup chickpea flour
   - 3/4 cup almond flour

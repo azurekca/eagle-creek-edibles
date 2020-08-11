@@ -1,7 +1,7 @@
 :root {
 	--auto-grid-min-size: 300px;
 	--size-base: 18px;
-	--page-max-width: 1500px;
+	--page-max-width: 1550px;
 	--text-max-width: 65ch;
 	/* Major second type scale */
 	--size-sm: calc(var(--size-base) * 0.8);
@@ -82,13 +82,13 @@ input[type=checkbox]:checked + label {
   color: var(--color-med);
 }
 /* Recipes */
-.index {
+.index-card {
 	text-decoration: none;
 	position: relative;
-	box-shadow: 0 0 15px 1px var(--color-med-light);
+	box-shadow: 0 3px 6px 0 var(--color-med-light);
 	z-index: 100;
 }
-.index-card {
+.index-card-desc {
 	overflow: hidden;
 	padding: var(--size-base, 1rem);
 	text-align: left;
@@ -97,49 +97,50 @@ input[type=checkbox]:checked + label {
 	height: 300px;
 	
 }
-.index-card > * {
+.index-card-desc > * {
 	margin-top: 4px;
 }
-.index-card > *::after,
-.index-card ul li::after {
+.index-card-desc > *::after,
+.index-card-desc ul li::after {
 	content: '';
 	display: block;
 	width: 100%;
 }
-.index-card > h2::after {
+.index-card-desc > h2::after {
 	height: 2px;
 	margin-top: 0.25rem;
-	background: red;
+	background: salmon;
 }
-.index-card > p::after,
-.index-card ul li::after {
+.index-card-desc > p::after,
+.index-card-desc ul li::after {
 	height: 1px;
 	margin-top: 1px;
 	background: lightblue;
 }
-.index-card .stars:after {
+.index-card-desc .stars:after {
 	margin-top: -8px;
 }
-.index-image {
+.index-card-image {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 500px;
 	height: auto;
+	border: 6px solid white;
 }
 /* Card Animation */
-.index {
+.index-card {
 	perspective: 65rem;
 	transform-style: preserve-3d;
-	transition: transform 1s ease-out;
+	transition: transform 0.5s ease-out;
 }
-.index:hover {
+.index-card:hover {
 	transform: rotateY(-180deg);
 }
-.index-card, .index-image {
+.index-card-desc, .index-card-image {
 	backface-visibility: hidden;
 }
-.index-image {
+.index-card-image {
   transform: rotateY(180deg)
 }
 /* Text */
