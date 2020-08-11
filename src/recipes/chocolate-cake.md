@@ -13,7 +13,7 @@ ingredients:
   - 1 tbsp vanilla extract
 type:
   - Dessert
-image: /static/images/chocolate_cake.jpg
+image: /static/images/chocolate_cake2.jpg
 ---
 Pre-heat the oven to 325 F degrees. 
 
