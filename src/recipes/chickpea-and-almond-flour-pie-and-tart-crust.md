@@ -12,7 +12,7 @@ ingredients:
   - extract or spice to match filling
 type:
   - Dessert
-image: /static/images/lemon_tart.jpg
+image: /static/images/pie_crust.jpg
 ---
 Preheat oven to 350 F
 
