@@ -1,11 +1,11 @@
 {% set typeList = collections.recipes %}
-<ul class="meal-type-buttons" id="button-list">
-  <li>
-    <button class="meal-type">Show All</button>
+<menu id="button-list" class="page-wrapper flex">
+  <li class="meal-type selected">
+    <button>All</button>
   </li>
   {% for type in collections.typeList -%}
-  <li>
-    <button class="meal-type">{{ type }}</button>
+  <li class="meal-type">
+    <button>{{ type }}</button>
   </li>
   {%- endfor %}
-</ul>
+</menu>

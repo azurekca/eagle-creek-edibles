@@ -1,7 +1,7 @@
 :root {
 	--auto-grid-min-size: 300px;
 	--size-base: 17.5px;
-	--page-max-width: 1550px;
+	--page-max-width: calc(1500px + 2 * var(--size-base));
 	--text-max-width: 65ch;
 	/* Major second type scale */
 	--size-sm: calc(var(--size-base) * 0.8);
@@ -16,6 +16,12 @@
 	--color-med: #747474;
 	--color-med-light: #B9B9B9;
 	--color-light: #E8E8E8;
+	--red: #f57792;
+	--orange: #ffaa86;
+	--yellow: #fdf1b3;
+	--green: #5ce4b2;
+	--blue: #77abfe;
+	--violet: #bda7ce;
 }
 
 /*  this is a guide for placement */
@@ -140,6 +146,41 @@ input[type=checkbox]:checked + label {
 }
 .index-card:hover .index-card-desc .stars:after {
 	background: none;
+}
+/* Tabs */
+#button-list {
+	list-style: none;
+	padding: 0;
+	justify-content: start;
+	flex-wrap: wrap-reverse;
+	border-bottom-color: var(--red);
+	border-bottom-style: solid;
+	border-bottom-width: calc(0.6 * var(--size-base));
+}
+.meal-type {
+	overflow: hidden;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.meal-type > * {
+	background-color: inherit;
+	border: none;
+	padding: calc(0.6 * var(--size-base)) calc(0.8 * var(--size-base)) calc(0.3 * var(--size-base));
+}
+.meal-type:nth-of-type(6n-5) {
+	background-color: var(--red);
+}
+.meal-type:nth-of-type(6n-4) {
+	background-color: var(--orange);
+}
+.meal-type:nth-of-type(6n-3) {
+	background-color: var(--yellow);
+}
+.meal-type:nth-of-type(6n-2) {
+	background-color: var(--green);
+}
+.meal-type:nth-of-type(6n-1) {
+	background-color: var(--blue);
 }
 
 /* Text */

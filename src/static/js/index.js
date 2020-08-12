@@ -1,6 +1,6 @@
 const searchForm = document.getElementById('search-recipes');
 const recipeCards = document.getElementsByClassName('index-card');
-const filterButtons = document.getElementsByClassName('meal-type');
+const filterButtonsList = document.getElementsByClassName('meal-type');
 
 // Event Listeners
 searchForm.addEventListener('submit', () => {
@@ -11,8 +11,16 @@ searchForm.addEventListener('submit', () => {
 
 document.addEventListener('click', (event) => {
   if (event.target.tagName === 'BUTTON') {
+    const clickedBtn = event.target;
     // show only cards matching filter
-    filterCards(event.target.innerHTML);
+    filterCards(clickedBtn.innerHTML);
+    // set selected class on clicked button's list element, remove from rest
+    for (let i = 0; i < filterButtonsList.length; i++) {
+      filterButtonsList[i].classList.remove('selected');
+    }
+    clickedBtn.parentElement.classList.add('selected');
+    // change border colour
+    document.getElementById('button-list').style.borderBottomColor = getComputedStyle(clickedBtn.parentElement).backgroundColor
   }
 });
 
@@ -39,11 +47,10 @@ function searchRecipes(searchTerms) {
 function filterCards(filterString) {
   // show all cards
   showAllElements(recipeCards)
-  if (filterString === 'Show All') return;
+  if (filterString === 'All') return;
   for (let i = 0; i < recipeCards.length; i++) {
     const card = recipeCards[i];
-    if (card.dataset.recipeType !== filterString) {
-      console.log('match woo hoo!');
+    if (!card.dataset.recipeType.includes(filterString)) {
       card.style.display = 'none';
     }
   }
