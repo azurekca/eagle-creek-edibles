@@ -29,7 +29,7 @@ function searchRecipes(searchTerms) {
     const recipeCard = recipeCards[i];
     const recipe = recipeCard.firstElementChild.innerText.toLowerCase();
     searchTerms.forEach(term => {
-      if (!recipe.includes(term)) {
+      if (!recipe.includes(term.toLowerCase())) {
         recipeCard.style.display = 'none';
       }
     });
