@@ -1,6 +1,6 @@
 :root {
 	--auto-grid-min-size: 300px;
-	--size-base: 18px;
+	--size-base: 17.5px;
 	--page-max-width: 1550px;
 	--text-max-width: 65ch;
 	/* Major second type scale */
@@ -81,12 +81,11 @@ input[type=checkbox]:checked + label {
   text-decoration: line-through;
   color: var(--color-med);
 }
-/* Recipes */
+/* Recipes / Index Cards */
 .index-card {
 	text-decoration: none;
 	position: relative;
 	box-shadow: 0 3px 6px 0 var(--color-med-light);
-	z-index: 100;
 }
 .index-card-desc {
 	overflow: hidden;
@@ -95,7 +94,8 @@ input[type=checkbox]:checked + label {
 	background-color: white;
 	color: var(--color-dark);
 	height: 300px;
-	
+	position: relative;
+	z-index: 10;
 }
 .index-card-desc > * {
 	margin-top: 4px;
@@ -127,22 +127,21 @@ input[type=checkbox]:checked + label {
 	width: 500px;
 	height: auto;
 	border: 6px solid white;
+	z-index: 0;
 }
-/* Card Animation */
-.index-card {
-	perspective: 65rem;
-	transform-style: preserve-3d;
-	transition: transform 0.5s ease-out;
+.index-card:hover .index-card-desc {
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8)20%,  rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%);
 }
-.index-card:hover {
-	transform: rotateY(-180deg);
+.index-card:hover p:not([class]) {
+	display: none;
 }
-.index-card-desc, .index-card-image {
-	backface-visibility: hidden;
+.index-card:hover .index-card-desc .stars {
+	color: white;
 }
-.index-card-image {
-  transform: rotateY(180deg)
+.index-card:hover .index-card-desc .stars:after {
+	background: none;
 }
+
 /* Text */
 body {
 	font-family: 'Special Elite', 'Courier New', Courier, monospace;
@@ -166,8 +165,6 @@ h3 {
 p, li, label {
 	font-size: var(--size-base);
 }
-
-
 
 @media (min-width: 600px) {
 	:root{
