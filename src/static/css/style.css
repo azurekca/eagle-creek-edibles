@@ -130,7 +130,7 @@ input[type=checkbox]:checked + label {
 	z-index: 0;
 }
 .index-card:hover .index-card-desc {
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8)20%,  rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9)20%,  rgba(255,255,255,0) 27%, rgba(255,255,255,0) 100%);
 }
 .index-card:hover p:not([class]) {
 	display: none;
