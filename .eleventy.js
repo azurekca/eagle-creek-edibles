@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
   // cms config and html
   eleventyConfig.addPassthroughCopy("./src/admin");
 
+  // create collection
+  eleventyConfig.addCollection("typeList", require("./src/utils/getTypeList.js"));
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
