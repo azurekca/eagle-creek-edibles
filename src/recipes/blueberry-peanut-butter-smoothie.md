@@ -12,7 +12,7 @@ ingredients:
   - 1/2 cup cold water
 type:
   - Breakfast
-image: /static/images/chocolate_cake.jpg
+image: /static/images/placeholder.png
 ---
 Add all ingredients to high powered blender
 

@@ -20,9 +20,33 @@ document.addEventListener('click', (event) => {
     }
     clickedBtn.parentElement.classList.add('selected');
     // change border colour
-    document.getElementById('button-list').style.borderBottomColor = getComputedStyle(clickedBtn.parentElement).backgroundColor
+    document.querySelector('.border-cheat').style.borderTopColor = getComputedStyle(clickedBtn.parentElement).backgroundColor
   }
 });
+
+window.onload = () => {
+  assignBackRowTab();
+}
+window.onresize = () => {
+  assignBackRowTab();
+}
+
+function assignBackRowTab() {
+  // compare height of each tab to height of tab container
+  //get height of a tab
+  const selectedTab = document.querySelector('.selected');
+  const selectedTabHeight = getComputedStyle(selectedTab).height;
+  const parentHeight = getComputedStyle(filterButtonsList[0].parentElement).height;
+  for (let i = 0; i < filterButtonsList.length; i++) {
+    const tab = filterButtonsList[i];
+    tab.classList.remove('back-row')
+  if (parentHeight > selectedTabHeight) {
+      if (tab.offsetTop < 10) {
+        tab.classList.add('back-row')
+      }
+    }
+  }
+}
 
 /**
  * Show only cards that match all the search terms provided

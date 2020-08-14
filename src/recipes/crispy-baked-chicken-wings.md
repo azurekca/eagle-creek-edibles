@@ -11,7 +11,7 @@ ingredients:
 type:
   - Dinner
   - Snack
-image: /static/images/chocolate_cake.jpg
+image: /static/images/placeholder.png
 ---
 Preheat oven to 450 F.
 
