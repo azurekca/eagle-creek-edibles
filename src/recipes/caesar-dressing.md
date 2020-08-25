@@ -7,9 +7,9 @@ ingredients:
   - 300 mL mayonnaise
   - 300 mL extra virgin olive oil
   - 100 mL Dijon mustard
-  - 1 - 2 tsp garlic
   - 125 mL lemon juice
-  - 1 - 2 tbsp anchovy paste
+  - 1-2 tsp garlic
+  - 1-2 tbsp anchovy paste
   - 1 tbsp capers
   - 1 tbsp Worcestershire sauce
   - 1/2 cup grated parmesan cheese
