@@ -34,7 +34,7 @@ const Recipe = createClass({
         </ul>
         <h2>Instructions</h2>
         ${this.props.widgetFor('body')}
-        <img src="${previewImg}" alt="${title}">
+        <img src="${previewImg}" alt="${title}"/>
       </div>
     `;
 	}
