@@ -11,7 +11,7 @@ ingredients:
 type:
   - Dinner
   - Snack
-image: /static/images/placeholder.png
+image: /static/images/chicken-wings.jpg
 ---
 Preheat oven to 450 F.
 
