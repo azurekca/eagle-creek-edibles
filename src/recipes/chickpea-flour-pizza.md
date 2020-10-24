@@ -13,7 +13,7 @@ ingredients:
   - pizza toppings
 type:
   - Dinner
-image: /static/images/placeholder.png
+image: /static/images/pizza.jpg
 ---
 Combine all ingredients, stir with a fork and let sit for at least 1 hour
 
