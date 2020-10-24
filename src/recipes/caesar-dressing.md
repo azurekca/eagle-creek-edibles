@@ -16,7 +16,7 @@ ingredients:
   - salt and pepper to taste
 type:
   - Dressing
-image: /static/images/placeholder.png
+image: /static/images/caaesar.jpg
 ---
 These quantities are for a 1 L mason jar.
 
