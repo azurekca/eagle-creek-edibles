@@ -193,6 +193,7 @@ input[type=checkbox]:checked + label {
 	border: none;
 	padding: calc(0.4 * var(--size-base)) calc(0.9 * var(--size-base)) calc(0 * var(--size-base));
 	transform: scale(calc(1/var(--scale)));
+	cursor: pointer;
 }
 .meal-type:nth-of-type(6n-5) {
 	background-color: var(--red);
