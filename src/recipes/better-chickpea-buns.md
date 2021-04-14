@@ -15,7 +15,7 @@ type:
   - Breakfast
   - Dinner
   - Snack
-image: /static/images/placeholder.png
+image: /static/images/hamburger.jpeg
 ---
 1. measure out 1 cup of chickpea flour into a two cup measuring cup or bowl.
 2. starting with 1/2 cup of water, mix into chickpea flour adding more as needed to moisten it all. The water should be less than 1 cup total.
