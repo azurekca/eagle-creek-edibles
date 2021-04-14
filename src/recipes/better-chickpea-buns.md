@@ -9,7 +9,6 @@ ingredients:
   - 2 tbsp yogurt
   - 1/4 tsp vinegar
   - 1-2 tsp herbs or spices like oregano or onion powder
-  - 1 tsp baking powder
   - 1/2 tsp baking soda
   - salt & pepper to taste
 type:
@@ -23,7 +22,7 @@ image: /static/images/placeholder.png
 3. let sit for 1 hour.
 4. preheat oven to 350F.
 5. add vinegar, 2 tbsp yogurt, spices, and salt and pepper and stir until combined.
-6. stir in baking powder and baking soda
+6. stir in baking soda
 7. preheat cast iron pan on med
-8. eye balling batter into 4 portions, spoon onto preheated pan. The batter may be runny, silicone or metal rings to keep them from pancaking out can be very useful at this step
+8. eye balling batter into 2 portions, spoon onto preheated pan. The batter may be runny, silicone or metal rings to keep them from pancaking out can be very useful at this step
 9. bake for 30 min or until golden on top
