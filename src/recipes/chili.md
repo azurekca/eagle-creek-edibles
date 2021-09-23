@@ -26,8 +26,9 @@ ingredients:
 type:
   - Dinner
   - Snack
-image: /static/images/20210922_202654.jpg
+image: /static/images/chili.jpg
 ---
+
 1. brown turkey in InstantPot on medium saute setting
 2. chop all vegetables
 3. add carrots, onion and mushrooms to pot and allow to soften (5 min)
