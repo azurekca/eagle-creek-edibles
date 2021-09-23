@@ -26,7 +26,7 @@ ingredients:
 type:
   - Dinner
   - Snack
-image: /static/images/placeholder.png
+image: /static/images/20210922_202654.jpg
 ---
 1. brown turkey in InstantPot on medium saute setting
 2. chop all vegetables
