@@ -1,15 +1,16 @@
 ---
 title: Slow Carb Pie and Tart Crust
 rating: 3
-prepTime: "30 min"
-cookTime: "25 min"
+prepTime: 30 min
+cookTime: 25 min
 ingredients:
-  - 3/4 cup chickpea flour
-  - 3/4 cup almond flour
+  - 1/2 cup chickpea flour
+  - 1 cup almond flour
   - 55g butter
   - pinch of salt
   - 3-5 tbsp cold water
   - extract or spice to match filling
+  - (optional)1 tbsp maple syrup
 type:
   - Dessert
 image: /static/images/pie_crust.jpg
@@ -20,9 +21,9 @@ Measure out flours and salt into a bowl or food processor.
 
 If adding spices, like cinnamon, add now.
 
-Cut in butter with pastry cutter or pulse in food processor till butter is incorporated.
+Cut in butter with pastry cutter or pulse in food processor till butter is incorporated. The goal is to get it to a small pea-sized consistency.
 
-If adding extract, like lemon for a lemon tart, add now.
+If adding extract or maple syrup, add now.
 
 Add enough cold water to help dough stick together.
 
