@@ -1,6 +1,6 @@
 ---
 title: Slow Carb Pie and Tart Crust
-rating: 3
+rating: 4
 prepTime: 30 min
 cookTime: 25 min
 ingredients:
