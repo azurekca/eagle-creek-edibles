@@ -14,7 +14,7 @@ ingredients:
   - 1 tsp vanilla extract
 type:
   - Dessert
-image: /static/images/placeholder.png
+image: /static/images/pumpkin_pie2.jpg
 ---
 Make the [Almond flour pie crust](https://eagle-creek-edibles.netlify.app/recipes/slow-carb-pie-and-tart-crust/). Keep the oven at 350F. Let pie crust cool for at least 10 min. before filling.
 
