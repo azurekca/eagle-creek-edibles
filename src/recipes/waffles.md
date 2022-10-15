@@ -4,8 +4,8 @@ rating: 5
 prepTime: 30 min
 cookTime: 10 min
 ingredients:
-  - 1 1/2 cups chickpea flour
-  - 1/2 almond flour
+  - 1 cup chickpea flour
+  - 1 cup almond flour
   - 2 eggs
   - 1/2 cup milk
   - 1/4 cup oil
